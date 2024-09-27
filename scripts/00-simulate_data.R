@@ -32,4 +32,6 @@ ggplot(simulation_data, aes(x = Day, y = SimulatedCrimes)) +
   labs(title = "Simulated Daily Crime Occurrences Over a Year", x = "Day of the Year", y = "Number of Crimes") +
   theme_minimal()
 
-# This plot would show how the number of crimes might fluctuate daily around the historical average.
+
+#### Save data ####
+write_csv(simulation_data, "data/simulated_data/simulation_data.csv")
